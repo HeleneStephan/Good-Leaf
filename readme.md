@@ -31,7 +31,7 @@ The **MVP** will include:
 
 ## Wireframes
 
-- [My Wireframe](./img/test.png) (I'm not a good designer, I know...)
+- [My Wireframe](./img/GoodLeaf-Wireframes.pdf) (I'm not a good designer, I know...)
 - [Navigation / User Flow](link to provide)
   ​
 
