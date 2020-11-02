@@ -15,7 +15,7 @@ The **MVP** will include:
 ​
 
 - **Homepage:** it will include a Sign Up and a Log In buttons
-- **Edible Plants Discovery:** it will randomly show edible plants
+- **Random Leaf:** Edible Plants Discovery: it will randomly show edible plants
 - **Sign Up:** it will be a validation form checking for simple errors and rules
 - **Log In:** it will be a connexion form with e-mail and password
 - **FAQ:** it will provide answers to frequently asked questions about **_Good Leaf_**
@@ -39,16 +39,22 @@ The **MVP** will include:
 
 - **root/**
   - index.html
+  - random.html
+  - signup.html
+  - login.html
+  - faq.html
   - **css/**
     - style.css
   - **src/**
+    - random.js
+    - signup.js
     - login.js
 - **img/**
   ​
 
 ## API
 
-[trefle](https://docs.trefle.io)
+[trefle](https://trefle.io/)
 ​
 
 ## Links
@@ -60,7 +66,7 @@ The **MVP** will include:
 
 #### GitHub
 
-[Project GitHub](link to provide)
+[Project GitHub](https://github.com/HeleneStephan/Good-Leaf)
 
 #### Slides
 
