@@ -31,7 +31,7 @@ The **MVP** will include:
 
 ## Wireframes
 
-- [My Wireframe](link to provide)
+- [My Wireframe](./img/test.png) (I'm not a good designer, I know...)
 - [Navigation / User Flow](link to provide)
   ​
 
@@ -49,6 +49,7 @@ The **MVP** will include:
     - random.js
     - signup.js
     - login.js
+    - validator.js
 - **img/**
   ​
 
@@ -61,7 +62,7 @@ The **MVP** will include:
 
 #### Trello
 
-[My 'Trello' board](link to provide)
+[My 'Trello' board](https://trello.com/b/e6wbOIPZ/good-leaf-module-1-ironhack-wdft-project)
 ​
 
 #### GitHub
