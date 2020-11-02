@@ -32,7 +32,7 @@ The **MVP** will include:
 ## Wireframes
 
 - [My Wireframe](./img/GoodLeaf-Wireframes.pdf) (I'm not a good designer, I know...)
-- [Navigation / User Flow](Good-Leaf-flow.pdf)
+- [Navigation / User Flow](./img/Good-Leaf-flow.pdf)
   ​
 
 ## Data structure
