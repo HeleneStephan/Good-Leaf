@@ -10,6 +10,8 @@ let ediblePlant = {};
 const name = document.createElement("H3");
 const img = document.createElement("IMG");
 const resume = document.createElement("P");
+const essentialInformations = document.createElement("DIV");
+const nameAndResume = document.createElement("DIV");
 const presentation = document.createElement("DIV");
 
 async function gettingData() {
@@ -26,17 +28,23 @@ async function gettingData() {
     }
     console.log(ediblePlant);
 
-    // edible plant name display
-    name.textContent = ediblePlant.common_name;
-    plantDiv.appendChild(name);
+    // principal edible plant div
+    plantDiv.appendChild(essentialInformations);
 
     // edible plant image display
     img.src = ediblePlant.image_url;
-    plantDiv.appendChild(img);
+    essentialInformations.appendChild(img);
+
+    // nameAndResume div to display Name and Resume together in different shapes
+    essentialInformations.appendChild(nameAndResume);
+
+    // edible plant name display
+    name.textContent = ediblePlant.common_name;
+    nameAndResume.appendChild(name);
 
     // edible plant sumary display
     resume.textContent = "blabla";
-    plantDiv.appendChild(resume);
+    nameAndResume.appendChild(resume);
 
     // edible plant total informations display
     plantDiv.appendChild(presentation);

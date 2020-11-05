@@ -86,6 +86,7 @@ video {
   border: 0;
   vertical-align: baseline;
   box-sizing: border-box;
+  text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -126,7 +127,153 @@ table {
 }
 
 /* --- CSS RESET END --- */
+:root {
+  --green-color: #2c6d00;
+  --light-green-color: #9cbb0c;
+}
 
 body {
   background-image: url("../img/green.png");
+  font-family: "Syne Mono", monospace, sans-serif;
+  color: var(--green-color);
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  background-image: url("../img/green.png");
+  background-attachment: fixed;
+  padding-bottom: 35px;
+}
+main {
+  padding-top: 120px;
+}
+
+h1 {
+  margin: 10px 0px;
+  font-size: 300%;
+  text-align: center;
+}
+h2 {
+  margin: 10px 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.nav-menu {
+  margin: 0px 45px;
+  padding: 3px;
+  border: 2px solid var(--green-color);
+}
+.nav-menu ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-menu ul li a {
+  font-size: 12px;
+  text-align: center;
+}
+#plantDiscovery {
+  margin: 10px;
+}
+#nav-plant {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#ediblePlantBtn {
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+  padding: 3px;
+  background-color: var(--light-green-color);
+  border: 2px solid var(--green-color);
+  position: fixed;
+}
+#randomEdiblePlant {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+#randomEdiblePlant div {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  padding: 8px;
+}
+
+#randomEdiblePlant div div {
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+#randomEdiblePlant h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+#randomEdiblePlant img {
+  width: 50%;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 400%;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  main {
+    padding-top: 170px;
+  }
+  .nav-menu {
+    margin: 20px 105px;
+    padding: 6px;
+  }
+  .nav-menu ul li a {
+    font-size: 18px;
+  }
+  #ediblePlantBtn {
+    font-size: 20px;
+    padding: 6px;
+    background-color: var(--light-green-color);
+    border: 2px solid var(--green-color);
+  }
+  #randomEdiblePlant h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  #randomEdiblePlant div div {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) {
+  h1 {
+    font-size: 500%;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  main {
+    padding-top: 200px;
+  }
+  .nav-menu {
+    margin: 20px 205px;
+    padding: 6px 50px;
+  }
+  .nav-menu ul li a {
+    font-size: 22px;
+  }
+  #randomEdiblePlant div div {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+  }
 }
