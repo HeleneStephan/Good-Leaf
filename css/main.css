@@ -125,10 +125,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
 /* --- CSS RESET END --- */
 :root {
   --green-color: #2c6d00;
+  --midle-green-color: #559b27;
   --light-green-color: #9cbb0c;
 }
 
@@ -136,6 +142,14 @@ body {
   background-image: url("../img/green.png");
   font-family: "Syne Mono", monospace, sans-serif;
   color: var(--green-color);
+}
+
+a:visited {
+  color: var(--green-color);
+}
+
+a:hover {
+  color: var(--midle-green-color);
 }
 
 header {
@@ -154,6 +168,7 @@ h1 {
   font-size: 300%;
   text-align: center;
 }
+
 h2 {
   margin: 10px 0px;
   font-size: 12px;
@@ -175,6 +190,7 @@ h2 {
   font-size: 12px;
   text-align: center;
 }
+
 #plantDiscovery {
   margin: 10px;
 }
@@ -218,6 +234,29 @@ h2 {
 }
 #randomEdiblePlant img {
   width: 50%;
+}
+
+.form-wrapper {
+  margin-top: 30px;
+}
+.login-form,
+.signup-form {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  background-color: var(--light-green-color);
+  color: var(--green-color);
+}
+
+button {
+  background-color: var(--light-green-color);
+  border: 2px solid var(--green-color);
+  color: var(--green-color);
 }
 
 @media (min-width: 600px) {
