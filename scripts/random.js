@@ -50,14 +50,9 @@ async function gettingData() {
     plantDiv.appendChild(presentation);
     if (ediblePlant.synonyms) {
       const synonyms = ediblePlant.synonyms;
-      console.log("here");
       const ul = document.createElement("UL");
       ul.innerHTML += `You could find <b>${name.textContent}</b> under different synonyms:`;
       presentation.appendChild(ul);
-      console.log("there");
-      console.log("synonyms", synonyms);
-      console.log("synonyms.length", synonyms.length);
-      console.log("synonyms[0]", synonyms[0]);
       synonyms.forEach((el) => {
         ul.innerHTML += `<li class="synonym">${el}</li>`;
       });
