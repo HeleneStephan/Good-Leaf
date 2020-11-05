@@ -1,6 +1,6 @@
 # Good Leaf
 
-![](./img/test.png)
+![](./img/green.png)
 
 ## Description
 

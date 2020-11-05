@@ -126,3 +126,7 @@ table {
 }
 
 /* --- CSS RESET END --- */
+
+body {
+  background-image: url("../img/green.png");
+}

@@ -9,6 +9,7 @@ let ediblePlant = {};
 const name = document.createElement("H3");
 const img = document.createElement("IMG");
 const resume = document.createElement("P");
+const presentation = document.createElement("DIV");
 
 async function gettingData() {
   try {
@@ -19,6 +20,7 @@ async function gettingData() {
     while (!ediblePlant.image_url) {
       ediblePlant = jsonData[Math.floor(Math.random() * jsonData.length)];
     }
+    console.log(ediblePlant);
 
     // edible plant name display
     name.textContent = ediblePlant.common_name;
@@ -33,6 +35,21 @@ async function gettingData() {
     plantDiv.appendChild(resume);
 
     // edible plant total informations display
+    plantDiv.appendChild(presentation);
+    if (ediblePlant.synonyms) {
+      const synonyms = ediblePlant.synonyms;
+      console.log("here");
+      const ul = document.createElement("UL");
+      ul.innerHTML += `You could find ${name.textContent} under different synonyms:`;
+      presentation.appendChild(ul);
+      console.log("there");
+      console.log("synonyms", synonyms);
+      console.log("synonyms.length", synonyms.length);
+      console.log("synonyms[0]", synonyms[0]);
+      synonyms.forEach((el) => {
+        ul.innerHTML += `<li class="synonym">${el}</li>`;
+      });
+    }
   } catch (error) {
     console.log("error");
     // error name display
@@ -40,7 +57,7 @@ async function gettingData() {
     plantDiv.appendChild(name);
 
     // error image display
-    img.src = "../img/error.png";
+    img.src = "../img/green.png";
     plantDiv.appendChild(img);
 
     resume.textContent =
