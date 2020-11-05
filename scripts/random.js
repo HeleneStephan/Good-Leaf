@@ -1,17 +1,21 @@
 "use strict";
 
+// get API data
 const api = "https://trefle.io/api/v1/";
 const token = "3wvKP6EA2xFo7jZhKNyxnGg2MxOr7sXI-46HKkcTDbw";
 const plantDiv = document.querySelector("#randomEdiblePlant");
 let ediblePlant = {};
 
-//html content
+// create html content
 const name = document.createElement("H3");
 const img = document.createElement("IMG");
 const resume = document.createElement("P");
 const presentation = document.createElement("DIV");
 
 async function gettingData() {
+  ediblePlant = {};
+  presentation.innerHTML = "";
+  resume.innerHTML = "";
   try {
     const response = await fetch(
       `${api}plants?filter_not[edible_part]=null&token=${token}`
@@ -40,7 +44,7 @@ async function gettingData() {
       const synonyms = ediblePlant.synonyms;
       console.log("here");
       const ul = document.createElement("UL");
-      ul.innerHTML += `You could find ${name.textContent} under different synonyms:`;
+      ul.innerHTML += `You could find <b>${name.textContent}</b> under different synonyms:`;
       presentation.appendChild(ul);
       console.log("there");
       console.log("synonyms", synonyms);
@@ -71,3 +75,6 @@ async function gettingData() {
 }
 
 gettingData();
+
+const edibleBtn = document.querySelector("#ediblePlantBtn");
+edibleBtn.addEventListener("click", gettingData);
