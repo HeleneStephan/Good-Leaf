@@ -1,6 +1,6 @@
 # Good Leaf
 
-![](./img/green.png)
+![](./img/good-leaf.png)
 
 ## Description
 
@@ -64,7 +64,7 @@ The **MVP** will include:
 
 #### Trello
 
-[My 'Trello' board](https://trello.com/b/e6wbOIPZ/good-leaf-module-1-ironhack-wdft-project)
+['Trello' board](https://trello.com/b/e6wbOIPZ/good-leaf-module-1-ironhack-wdft-project)
 ​
 
 #### GitHub
@@ -73,4 +73,12 @@ The **MVP** will include:
 
 #### Slides
 
-[My Presentation](link to provide)
+[Presentation](https://docs.google.com/presentation/d/1v4OauegP5ekHb6lGuxY83vWeqgk8m_q6VScF74SGcWY/edit?usp=sharing)
+
+#### Good Leaf
+
+WARNING: right now, to see the project, a CORS changer extension is needed.
+[Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/moesif-origin-cors-changer1/)
+[Chrome extension](https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc)
+
+[The Good Leaf project itself](https://helenestephan.github.io/Good-Leaf/)

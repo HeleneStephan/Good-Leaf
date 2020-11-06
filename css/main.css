@@ -172,6 +172,11 @@ main {
   padding-top: 150px;
   line-height: 2;
 }
+.main-content {
+  width: 80%;
+  margin-left: 10%;
+  font-size: 14px;
+}
 
 h1 {
   margin: 10px 0px;
@@ -205,11 +210,6 @@ h3 {
 .nav-menu ul li a {
   font-size: 12px;
   text-align: center;
-}
-
-.main-content {
-  width: 80%;
-  margin-left: 10%;
 }
 #acorn {
   margin-top: 10px;
@@ -254,7 +254,7 @@ h3 {
 }
 
 #randomEdiblePlant h3 {
-  font-size: 15px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 #randomEdiblePlant img {
@@ -294,6 +294,10 @@ button {
 }
 
 @media (min-width: 600px) {
+  .main-content {
+    font-size: 18px;
+  }
+
   h1 {
     font-size: 400%;
   }
@@ -320,8 +324,7 @@ button {
     border: 2px solid var(--green-color);
   }
   #randomEdiblePlant h3 {
-    font-size: 40px;
-    margin-bottom: 10px;
+    font-size: 25px;
   }
   #randomEdiblePlant div div {
     margin-left: 20px;
@@ -331,6 +334,9 @@ button {
 }
 
 @media (min-width: 769px) {
+  .main-content {
+    font-size: 20px;
+  }
   h1 {
     font-size: 500%;
   }
@@ -354,5 +360,8 @@ button {
     margin-left: 30px;
     display: flex;
     flex-direction: column;
+  }
+  #randomEdiblePlant h3 {
+    font-size: 35px;
   }
 }
