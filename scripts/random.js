@@ -39,7 +39,9 @@ async function gettingData() {
     essentialInformations.appendChild(nameAndResume);
 
     // edible plant name display
-    name.textContent = ediblePlant.common_name;
+    name.textContent = ediblePlant.common_name
+      ? ediblePlant.common_name
+      : ediblePlant.scientific_name;
     nameAndResume.appendChild(name);
 
     // edible plant sumary display
@@ -52,11 +54,17 @@ async function gettingData() {
 
     // edible plant total informations display
     plantDiv.appendChild(presentation);
-    if (ediblePlant.synonyms) {
+    if (
+      ediblePlant.synonyms ||
+      name.textContent != ediblePlant.scientific_name
+    ) {
       const synonyms = ediblePlant.synonyms;
       const ul = document.createElement("UL");
       ul.innerHTML += `You could find <b>${name.textContent}</b> under different synonyms:`;
       presentation.appendChild(ul);
+      if (name.textContent != ediblePlant.scientific_name) {
+        ul.innerHTML += `<li class="synonym">${ediblePlant.scientific_name}</li>`;
+      }
       synonyms.forEach((el) => {
         ul.innerHTML += `<li class="synonym">${el}</li>`;
       });
