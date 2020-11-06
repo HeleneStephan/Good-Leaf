@@ -88,6 +88,12 @@ class Signup {
     this.nameInput.value = "";
     this.emailInput.value = "";
     this.passwordInput.value = "";
+    this.redirect();
+  };
+  redirect = () => {
+    setTimeout(function () {
+      location.assign("login.html");
+    }, 10);
   };
 
   addListeners = () => {
