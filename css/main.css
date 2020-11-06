@@ -144,6 +144,11 @@ body {
   color: var(--green-color);
 }
 
+li {
+  margin-left: 20px;
+  list-style-type: circle;
+}
+
 a:visited {
   color: var(--green-color);
 }
@@ -157,10 +162,11 @@ header {
   position: fixed;
   background-image: url("../img/green.png");
   background-attachment: fixed;
-  padding-bottom: 35px;
+  height: 150px;
 }
 main {
-  padding-top: 120px;
+  padding-top: 150px;
+  line-height: 2;
 }
 
 h1 {
@@ -191,6 +197,17 @@ h2 {
   text-align: center;
 }
 
+.intro {
+  width: 70%;
+  margin-left: 15%;
+}
+#acorn {
+  margin-top: 10px;
+  width: 100%;
+}
+.intro span {
+  font-size: 10px;
+}
 #plantDiscovery {
   margin: 10px;
 }
@@ -201,7 +218,7 @@ h2 {
   justify-content: space-around;
 }
 #ediblePlantBtn {
-  margin-top: 10px;
+  margin-top: 30px;
   font-size: 12px;
   text-align: center;
   padding: 3px;
@@ -212,18 +229,17 @@ h2 {
 #randomEdiblePlant {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
 }
 
 #randomEdiblePlant div {
   display: flex;
   flex-direction: row;
   align-items: space-between;
-  padding: 8px;
+  margin-top: 10px;
 }
 
 #randomEdiblePlant div div {
-  margin-left: 8px;
+  margin: 0px 18px;
   display: flex;
   flex-direction: column;
 }
@@ -235,7 +251,6 @@ h2 {
 #randomEdiblePlant img {
   width: 50%;
 }
-
 .form-wrapper {
   margin-top: 30px;
 }
@@ -266,8 +281,11 @@ button {
   h2 {
     font-size: 20px;
   }
+  header {
+    height: 220px;
+  }
   main {
-    padding-top: 170px;
+    padding-top: 220px;
   }
   .nav-menu {
     margin: 20px 105px;
@@ -300,8 +318,11 @@ button {
   h2 {
     font-size: 25px;
   }
+  header {
+    height: 270px;
+  }
   main {
-    padding-top: 200px;
+    padding-top: 270px;
   }
   .nav-menu {
     margin: 20px 205px;

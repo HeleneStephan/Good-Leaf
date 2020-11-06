@@ -43,7 +43,11 @@ async function gettingData() {
     nameAndResume.appendChild(name);
 
     // edible plant sumary display
-    resume.textContent = "blabla";
+    const family = ediblePlant.family_common_name
+      ? ediblePlant.family_common_name
+      : "an unreferenced family";
+    const date = ediblePlant.year;
+    resume.innerHTML = `The <b>${name.textContent}</b> belongs to the <b>${family}</b>. It was described in <b>${date}</b>. `;
     nameAndResume.appendChild(resume);
 
     // edible plant total informations display
