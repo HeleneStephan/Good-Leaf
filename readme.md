@@ -43,13 +43,15 @@ The **MVP** will include:
   - signup.html
   - login.html
   - faq.html
+  - personnal.html
   - **css/**
-    - style.css
+    - main.css
   - **src/**
     - random.js
     - signup.js
     - login.js
     - validator.js
+    - database.js
 - **img/**
   ​
 

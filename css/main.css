@@ -149,6 +149,10 @@ li {
   list-style-type: circle;
 }
 
+a {
+  color: var(--green-color);
+}
+
 a:visited {
   color: var(--green-color);
 }
@@ -173,17 +177,23 @@ h1 {
   margin: 10px 0px;
   font-size: 300%;
   text-align: center;
+  text-shadow: yellow 10px 0 30px;
 }
 
 h2 {
   margin: 10px 0px;
   font-size: 12px;
   text-align: center;
+  text-shadow: yellow 1px 0 10px;
+}
+h3 {
+  text-shadow: yellow 1px 0 10px;
 }
 .nav-menu {
   margin: 0px 45px;
   padding: 3px;
   border: 2px solid var(--green-color);
+  text-shadow: yellow 1px 0 10px;
 }
 .nav-menu ul {
   display: flex;
@@ -197,20 +207,18 @@ h2 {
   text-align: center;
 }
 
-.intro {
-  width: 70%;
-  margin-left: 15%;
+.main-content {
+  width: 80%;
+  margin-left: 10%;
 }
 #acorn {
   margin-top: 10px;
   width: 100%;
 }
-.intro span {
+.credits {
   font-size: 10px;
 }
-#plantDiscovery {
-  margin: 10px;
-}
+
 #nav-plant {
   display: flex;
   flex-direction: row;
@@ -227,6 +235,7 @@ h2 {
   position: fixed;
 }
 #randomEdiblePlant {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -272,6 +281,16 @@ button {
   background-color: var(--light-green-color);
   border: 2px solid var(--green-color);
   color: var(--green-color);
+}
+
+.Q,
+.A {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.Q {
+  text-shadow: yellow 1px 0 10px;
 }
 
 @media (min-width: 600px) {
