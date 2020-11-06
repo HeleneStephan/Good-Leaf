@@ -73,7 +73,7 @@ The **MVP** will include:
 
 #### Slides
 
-[Presentation](https://docs.google.com/presentation/d/1v4OauegP5ekHb6lGuxY83vWeqgk8m_q6VScF74SGcWY/edit?usp=sharing)
+[Presentation](./img/Good-Leaf-slides.pdf)
 
 #### Good Leaf
 
